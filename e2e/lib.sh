@@ -46,14 +46,17 @@ addr() { stellar keys address "$1"; }
 # contract_id <name> -> prints the cached deployed contract id, or dies with
 # instructions to run 01_setup_and_deploy.sh first.
 contract_id() {
-  local name="$1" f="${STATE_DIR}/${NETWORK}.${name}.contract_id"
+  local name="$1"
+  local f="${STATE_DIR}/${NETWORK}.${name}.contract_id"
   [ -f "${f}" ] || die "no deployed '${name}' contract; run 01_setup_and_deploy.sh first"
   cat "${f}"
 }
 
 # deploy_if_needed <name> <wasm_path> -> deploys once, caches id, reuses on re-run.
 deploy_if_needed() {
-  local name="$1" wasm_path="$2" f="${STATE_DIR}/${NETWORK}.${name}.contract_id"
+  local name="$1"
+  local wasm_path="$2"
+  local f="${STATE_DIR}/${NETWORK}.${name}.contract_id"
   if [ -f "${f}" ] && stellar contract invoke --id "$(cat "${f}")" --source "${ADMIN}" \
        --network "${NETWORK}" -- --help >/dev/null 2>&1; then
     ok "reusing existing '${name}' deployment $(cat "${f}")"

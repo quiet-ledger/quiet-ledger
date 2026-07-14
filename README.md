@@ -9,6 +9,17 @@ underlying PII.
 > is production-ready or audited. See [Roadmap](#roadmap) and the seeded
 > issues for what's actually built versus planned.
 
+## Live on testnet
+
+All three contracts are deployed and verified working on Stellar Testnet
+(the full `e2e/` suite passes against these, live, not just locally):
+
+| Contract | Address |
+|---|---|
+| `attestation_registry` | [`CC76EO6XTIDFE6YJUSBZZ7QOWPBLXJCSSEWZI2XQDRWW25RCPPTN7C5G`](https://stellar.expert/explorer/testnet/contract/CC76EO6XTIDFE6YJUSBZZ7QOWPBLXJCSSEWZI2XQDRWW25RCPPTN7C5G) |
+| `proof_verifier` | [`CDTNSLU4OU3JJ7GEGCP3V4XIN6OKGNPKDWYU6GEFOKE2IZLPMMB2IHFB`](https://stellar.expert/explorer/testnet/contract/CDTNSLU4OU3JJ7GEGCP3V4XIN6OKGNPKDWYU6GEFOKE2IZLPMMB2IHFB) |
+| `travel_rule_envelope` | [`CCPTCVMCVY2IRGOIF4IIT3Q5SZQKPPMASUCLXHE4ZEAWDKLJ4IUNIFYN`](https://stellar.expert/explorer/testnet/contract/CCPTCVMCVY2IRGOIF4IIT3Q5SZQKPPMASUCLXHE4ZEAWDKLJ4IUNIFYN) |
+
 ## The problem
 
 Anchors running SEP-31 cross-border payments are required to satisfy FATF
