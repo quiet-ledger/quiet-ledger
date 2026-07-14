@@ -16,6 +16,7 @@ STATE_DIR="${HERE}/.state"
 ADMIN="${ADMIN_IDENTITY:-ql_admin}"
 ANCHOR_A="${ANCHOR_A_IDENTITY:-ql_anchor_a}"
 ANCHOR_B="${ANCHOR_B_IDENTITY:-ql_anchor_b}"
+CO_SIGNER_C="${CO_SIGNER_C_IDENTITY:-ql_co_signer_c}"
 
 mkdir -p "${STATE_DIR}"
 
