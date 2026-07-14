@@ -1,0 +1,14 @@
+[workspace]
+# Intentionally its own workspace root, independent of the contracts
+# workspace at the repo root — this crate has no soroban-sdk dependency and
+# shouldn't be forced through the contracts' dependency resolution.
+
+[package]
+name = "quiet-ledger-sdk"
+version = "0.1.0"
+edition = "2021"
+description = "Rust client for anchors integrating Quiet Ledger's travel-rule disclosure contracts."
+license = "MIT"
+publish = false
+
+[dependencies]

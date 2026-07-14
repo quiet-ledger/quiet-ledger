@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Architecture and design questions
+    url: https://github.com/quiet-ledger/quiet-ledger/blob/main/ARCHITECTURE.md
+    about: Read the architecture overview before opening a design discussion.
+  - name: Protocol RFC
+    url: https://github.com/quiet-ledger/quiet-ledger/blob/main/docs/RFC.md
+    about: The travel-rule disclosure protocol specification in progress.
+  - name: Threat model
+    url: https://github.com/quiet-ledger/quiet-ledger/blob/main/docs/THREAT_MODEL.md
+    about: Trust assumptions and what's explicitly out of scope.

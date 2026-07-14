@@ -1,0 +1,10 @@
+target/
+Cargo.lock
+node_modules/
+dist/
+circuits/*/build/
+circuits/*/*.wtns
+circuits/*/witness*.json
+circuits/*/input*.json
+e2e/.state/
+*.log

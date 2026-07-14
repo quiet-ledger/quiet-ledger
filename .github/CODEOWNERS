@@ -1,0 +1,13 @@
+# Each line is a file pattern followed by one or more owners.
+# Order matters: the last matching pattern takes precedence.
+
+* @iamkingvalor
+
+# Contract and circuit code — the security-critical surface — always needs
+# owner review.
+contracts/ @iamkingvalor
+circuits/ @iamkingvalor
+
+# Root config and CI/CD
+Cargo.toml @iamkingvalor
+.github/ @iamkingvalor
