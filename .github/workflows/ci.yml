@@ -29,7 +29,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo fmt --check
-      - run: cargo clippy -- -D warnings
+      - run: cargo clippy --tests -- -D warnings
+      # Integration tests hit live testnet. Write-path tests gracefully skip
+      # without SDK_TEST_ANCHOR_A_SECRET (not configured in CI) — read-only
+      # tests still run and need outbound network access.
       - run: cargo test
 
   ts-sdk:

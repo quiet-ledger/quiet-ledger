@@ -12,3 +12,8 @@ license = "MIT"
 publish = false
 
 [dependencies]
+soroban-client = "0.5"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+
+[dev-dependencies]
+rand = "0.8"

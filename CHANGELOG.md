@@ -22,4 +22,7 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `@stellar/stellar-sdk`, covering `publishCommitment`, `getCommitment`,
   `submitEnvelope`, `getEnvelope`, and `verifyProof`. 5 tests, all against
   live testnet — real writes, real reads, real rejection paths.
+- Rust SDK (`sdk/rust`): real implementation against the `soroban-client`
+  crate, covering the same four functions. 4 integration tests, all against
+  live testnet.
 - CI, issue templates, and contribution guidelines.
