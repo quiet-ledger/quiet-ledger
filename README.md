@@ -11,14 +11,19 @@ underlying PII.
 
 ## Live on testnet
 
-All three contracts are deployed and verified working on Stellar Testnet
-(the full `e2e/` suite passes against these, live, not just locally):
+All four contracts are deployed and verified working on Stellar Testnet
+(the full `e2e/` suite passes against these, live, not just locally). These
+addresses are the ones tracked in `e2e/.state/` and actually exercised by
+the e2e suite and SDKs — if you redeploy locally your own addresses will
+differ; re-run `e2e/01_setup_and_deploy.sh` and check `e2e/.state/` for
+your own.
 
 | Contract | Address |
 |---|---|
-| `attestation_registry` | [`CC76EO6XTIDFE6YJUSBZZ7QOWPBLXJCSSEWZI2XQDRWW25RCPPTN7C5G`](https://stellar.expert/explorer/testnet/contract/CC76EO6XTIDFE6YJUSBZZ7QOWPBLXJCSSEWZI2XQDRWW25RCPPTN7C5G) |
-| `proof_verifier` | [`CDTNSLU4OU3JJ7GEGCP3V4XIN6OKGNPKDWYU6GEFOKE2IZLPMMB2IHFB`](https://stellar.expert/explorer/testnet/contract/CDTNSLU4OU3JJ7GEGCP3V4XIN6OKGNPKDWYU6GEFOKE2IZLPMMB2IHFB) |
-| `travel_rule_envelope` | [`CCPTCVMCVY2IRGOIF4IIT3Q5SZQKPPMASUCLXHE4ZEAWDKLJ4IUNIFYN`](https://stellar.expert/explorer/testnet/contract/CCPTCVMCVY2IRGOIF4IIT3Q5SZQKPPMASUCLXHE4ZEAWDKLJ4IUNIFYN) |
+| `attestation_registry` | [`CB2RON4OTYIBD7YK7VCRTZIV6NF7PYXDXACC5N2SLDSVNSJ4MHSMXCQT`](https://stellar.expert/explorer/testnet/contract/CB2RON4OTYIBD7YK7VCRTZIV6NF7PYXDXACC5N2SLDSVNSJ4MHSMXCQT) |
+| `proof_verifier` | [`CCGSFI3FT3XJH2WI7WAMA7ZY7FA53HT7AAXSP56M3YZ242NQCV5DHQ6F`](https://stellar.expert/explorer/testnet/contract/CCGSFI3FT3XJH2WI7WAMA7ZY7FA53HT7AAXSP56M3YZ242NQCV5DHQ6F) |
+| `travel_rule_envelope` | [`CADXCVAR45PCU75JJWD2HMVKOJTFBS7RZXENLH5DQHABWTD6HWPFWAX2`](https://stellar.expert/explorer/testnet/contract/CADXCVAR45PCU75JJWD2HMVKOJTFBS7RZXENLH5DQHABWTD6HWPFWAX2) |
+| `threshold_attestation` | [`CC5VMIXRTABEXQXCPKOQGJAEFHZQIMX722VLFIIF6ENODQ23PIOKSCWS`](https://stellar.expert/explorer/testnet/contract/CC5VMIXRTABEXQXCPKOQGJAEFHZQIMX722VLFIIF6ENODQ23PIOKSCWS) |
 
 ## The problem
 

@@ -12,6 +12,14 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Protocol RFC draft (`docs/RFC.md`) and threat model draft
   (`docs/THREAT_MODEL.md`).
 - `range_disclosure` circuit: working bit-decomposition range-check circuit.
-- `merkle_membership` and `threshold_attestation` circuit design docs
-  (constraint logic tracked as open issues — see Roadmap in `README.md`).
+- `merkle_membership` circuit design doc (constraint logic tracked as an
+  open issue — see Roadmap in `README.md`).
+- `threshold_attestation` contract: k-of-n institutional multisig check,
+  deployed and initialized on testnet.
+- All four contracts deployed and verified on Stellar Testnet with a
+  passing `e2e/` suite.
+- TypeScript SDK (`sdk/ts`): real implementation against
+  `@stellar/stellar-sdk`, covering `publishCommitment`, `getCommitment`,
+  `submitEnvelope`, `getEnvelope`, and `verifyProof`. 5 tests, all against
+  live testnet — real writes, real reads, real rejection paths.
 - CI, issue templates, and contribution guidelines.
